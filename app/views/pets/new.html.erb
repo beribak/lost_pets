@@ -1,0 +1,8 @@
+
+<%= simple_form_for @pet, html: {class: "w-50 p-2 m-auto"} do |f| %>
+    <%= f.input :name %>
+    <%= f.input :species %>
+    <%= f.input :address %>
+    <%= f.input :found_on %>
+    <%= f.submit %>
+<% end %>

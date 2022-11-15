@@ -1,0 +1,7 @@
+<%= form_with model: @pet do |f| %>
+    <%= f.text_field :name %>
+    <%= f.text_field :species %>
+    <%= f.text_field :address %>
+    <%= f.date_field :found_on %>
+    <%= f.submit %>
+<% end %>
