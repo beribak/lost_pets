@@ -1,0 +1,18 @@
+<%= form_with model: @pet do |f| %>
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :address %>
+    <%= f.text_field :address %>
+  </p>
+
+  <p>
+    <%= f.label :species %>
+    <%= f.text_field :species %>
+  </p>
+
+  <%= f.submit %>
+<% end %>

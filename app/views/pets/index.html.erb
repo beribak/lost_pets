@@ -1,0 +1,15 @@
+
+<div style="margin: auto; width: 20vw;">
+  <% @pets.each do |pet| %>
+    <div style="padding: 10px; border: 2px solid aqua; margin-bottom: 10px;">
+      <h3>
+        <%= pet.name %>
+      </h3>
+      <p><%= pet.address %></p>
+      <p><%= pet.species %></p>
+
+      <%= link_to 'Show', pet_path(pet.id) %>
+      <%= link_to 'Destroy', pet_path(pet.id), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
+    </div>
+  <% end %>
+</div>
